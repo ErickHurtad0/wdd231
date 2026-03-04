@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+
+#menuButton {
+  display: none;
+}
+
+.nav-wrapper {
+  position: static;
+}
+
+nav {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  background: none;
+  width: auto;
+}
+
+.home-grid {
+  grid-template-columns: 2fr 1fr;
+}
+
+}
