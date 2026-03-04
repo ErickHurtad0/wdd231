@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD 231 Home Page – Web and Computer Programming">
+  <meta name="author" content="Erick Hurtado">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD 231 | Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+        <img src="images/logo.svg" alt="Logo" class="logo">
+        <span class="site-name">Erick Hurtado</span>
+    </div>
+
+    <div class="nav-wrapper">
+        <button id="menuButton" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="primaryNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="final/index.html">Final</a>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+  <h1>Home</h1>
+
+  <div class="home-grid">
+    <section class="card about">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my WDD 231 home page. This site showcases my progress
+        in the Web and Computer Programming certificate.
+      </p>
+    </section>
+
+    <section class="card photo">
+      <h2>Student Photo</h2>
+      <img src="images/profile.jpg" alt="Student photo">
+    </section>
+  </div>
+
+  <section class="card certificate">
+
+    <h2>Web Certificate Courses</h2>
+
+    <div class="course-controls">
+        <button data-filter="all" id="allBtn">All Courses</button>
+        <button data-filter="wdd" id="wddBtn">WDD Courses</button>
+        <button data-filter="cse" id="cseBtn">CSE Courses</button>
+    </div>
+
+    <div id="courses" class="course-list"></div>
+
+    <p class="credits">
+        The total credits for courses listed above is
+        <strong><span id="totalCredits">0</span></strong>
+    </p>
+
+  </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+
+    <div class="footer-info">
+      <p>
+        &copy; <span id="currentYear"></span> | Erick Hurtado | Mexico City
+      </p>
+    </div>
+
+    <div>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
