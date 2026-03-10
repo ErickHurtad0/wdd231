@@ -6,8 +6,6 @@ const container = document.querySelector("#members");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
-/* FETCH MEMBERS */
-
 async function getMembers() {
   try {
 
@@ -19,14 +17,13 @@ async function getMembers() {
 
     const data = await response.json();
 
-    displayMembers(data.members); // expects { members: [] }
+    displayMembers(data.members); 
 
   } catch (error) {
     console.error("Error loading members:", error);
   }
 }
 
-/* DISPLAY MEMBERS */
 
 function displayMembers(members) {
 
@@ -51,8 +48,6 @@ function displayMembers(members) {
 
 }
 
-/* VIEW TOGGLE */
-
 gridButton.addEventListener("click", () => {
   container.classList.add("grid");
   container.classList.remove("list");
@@ -63,7 +58,6 @@ listButton.addEventListener("click", () => {
   container.classList.remove("grid");
 });
 
-/* LOAD MEMBERS */
 
 getMembers();
 
@@ -71,10 +65,6 @@ getMembers();
 
 
 
-
-
-
-// Responsive Navigation
 const menuButton = document.getElementById("menuButton");
 const nav = document.getElementById("primaryNav");
 
@@ -95,7 +85,6 @@ menuButton.textContent = "☰";
 }
 
 });
-// Footer Dates
 
 document.getElementById("year").textContent =
 new Date().getFullYear();

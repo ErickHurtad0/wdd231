@@ -129,12 +129,6 @@ box-shadow:none;
 border-bottom:1px solid #ccc;
 }
 
-/* OPEN MENU */
-
-#primaryNav.open{
-display:block;
-}
-
 
 footer{
 background:#ddd;
