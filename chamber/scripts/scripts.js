@@ -1,4 +1,4 @@
-const url = "scripts/members.json";
+const url = "data/members.json";
 
 document.addEventListener("DOMContentLoaded", () => {
 
