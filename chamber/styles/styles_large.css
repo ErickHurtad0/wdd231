@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+
+/* existing code */
+
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* hide burger button on large screens */
+#menuButton{
+display:none;
+}
+
+/* always show navigation */
+#primaryNav{
+display:block;
+width:auto;
+}
+
+#primaryNav ul{
+display:flex;
+gap:1.5rem;
+align-items:center;
+}
+
+#primaryNav a{
+padding:0.5rem 1rem;
+font-weight:500;
+}
+
+/* FOOTER LAYOUT FIX */
+
+footer{
+grid-template-columns: 1fr auto 1fr;
+align-items:center;
+text-align:left;
+}
+
+.footer-social{
+text-align:center;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:1rem;
+margin-bottom:.5rem;
+}
+
+.footer-right{
+text-align:right;
+}
+
+}
