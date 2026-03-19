@@ -33,6 +33,7 @@ function displayMembers(members) {
 
     const card = document.createElement("section");
     card.classList.add("member-card");
+    
 
     card.innerHTML = `
       <img src="images/${member.image}" alt="${member.name}">

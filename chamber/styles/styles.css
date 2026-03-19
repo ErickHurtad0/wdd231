@@ -283,3 +283,47 @@ margin:.5rem;
 .spotlight-card a:hover {
     text-decoration: underline;
 }
+
+.events {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.events h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  background: white;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-left: 5px solid #D4AF37; 
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.events li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding-top: 1rem;
+}
