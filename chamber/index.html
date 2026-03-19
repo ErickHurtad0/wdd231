@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+ <!DOCTYPE html>
     <html lang="en-US">
 
     <head>
@@ -6,23 +6,23 @@
         <link rel="stylesheet" href="styles/styles_large.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 231 – Chamber of Commerce Directory – Erick Hurtado Cabrales</title>
+        <title>WDD 231 – Chamber of Commerce Home Page – Erick Hurtado Cabrales</title>
         <link rel="icon" href="images/favicon.ico">
-        <meta name="description" content="WDD 231 – Chamber of Commerce Directory – Erick Hurtado Cabrales">
+        <meta name="description" content="WDD 231 – Chamber of Commerce Home Page – Erick Hurtado Cabrales">
         <meta name="author" content="Erick Hurtado">
         <meta property="og:title" content="WDD 231">
-        <meta property="og:description" content="Welcome to the Chamber of Commerce Directory, made by Erick Hurtado.">
-        <meta property="og:url" content="https://erickhurtad0.github.io/wdd231/chamber/directory.html">
+        <meta property="og:description" content="Welcome to the Chamber of Commerce Home Page, made by Erick Hurtado.">
+        <meta property="og:url" content="https://erickhurtad0.github.io/wdd231/chamber/index.html">
         <meta property="og:locale" content="en_US">
         <meta property="og:image" content="https://erickhurtad0.github.io/wdd231/chamber/images/logo.png">
         <meta property="og:image:width" content="1920">
         <meta property="og:image:height" content="1280">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Chamber of Commerce Directory">
+        <meta property="og:site_name" content="Chamber of Commerce Home Page">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        <script src="scripts/scripts.js" defer></script>
+        <script src="scripts/scripts_index.js" defer></script>
     </head>
 
         <body>
@@ -50,15 +50,44 @@
 
             <main>
 
-                <h2>Business Directory</h2>
+                <section class="hero">
+                    <img src="images/hero.jpg" alt="Mexico City Business District">
+                    <div class="hero-text">
+                        <h2>Grow Your Business with Us</h2>
+                        <p>Connecting businesses across Mexico City.</p>
+                        <a href="#" class="cta-button">Join the Chamber</a>
+                    </div>
+                </section>
 
-                <div class="directory-buttons">
-                <button id="grid">⬛</button>
-                <button id="list">☰</button>
+                <div class="home-grid">
+
+                    <section class="events">
+                        <h2>Current Events</h2>
+                        <ul>
+                            <li>📅 March 25 – Business Networking Night</li>
+                            <li>📅 April 2 – Local Market Expo</li>
+                            <li>📅 April 10 – Entrepreneurship Workshop</li>
+                        </ul>
+                    </section>
+
+                    <section class="weather">
+                        <h2>Weather</h2>
+                        <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+                        <p><strong>Condition:</strong> <span id="weather-desc"></span></p>
+                        <div id="forecast"></div>
+                    </section>
+
                 </div>
 
-                <div id="members" class="grid">
-                </div>
+                <section class="spotlights">
+                    <h2>Business Spotlights</h2>
+                    <div id="spotlight-container"></div>
+                </section>
+
+                <section class="members-section">
+                    <h2>Our Loyal Members</h2>
+                    <div id="members"></div>
+                </section>
 
             </main>
 

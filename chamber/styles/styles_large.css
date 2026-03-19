@@ -47,4 +47,26 @@ margin-bottom:.5rem;
 text-align:right;
 }
 
+main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+.hero {
+    grid-column: 1 / -1;
+}
+
+.spotlights {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+.weather {
+    max-width: 400px;
+    margin: auto;
+}
+
 }

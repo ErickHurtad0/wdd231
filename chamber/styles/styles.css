@@ -145,3 +145,141 @@ margin:.5rem;
 }
 
 
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+  padding-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+.hero-text p {
+  padding-bottom: 2.3rem;
+  font-size: 2rem;
+}
+
+.hero-text a {
+  font-size: 1.5rem;
+}
+
+.cta-button {
+    background: #0077cc;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.weather {
+    background: #f4f6f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.weather h2 {
+    margin-bottom: 1rem;
+}
+
+#current-temp {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+#weather-desc {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+#forecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+#forecast p {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.spotlights {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.spotlights h2 {
+    padding-bottom: 1rem;
+}
+
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.spotlight-card:hover {
+    transform: scale(1.03);
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card h3 {
+    margin: 0.5rem 0;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}

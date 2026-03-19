@@ -48,16 +48,17 @@ function displayMembers(members) {
 
 }
 
-gridButton.addEventListener("click", () => {
-  container.classList.add("grid");
-  container.classList.remove("list");
-});
+if (gridButton && listButton && container) {
+  gridButton.addEventListener("click", () => {
+    container.classList.add("grid");
+    container.classList.remove("list");
+  });
 
-listButton.addEventListener("click", () => {
-  container.classList.add("list");
-  container.classList.remove("grid");
-});
-
+  listButton.addEventListener("click", () => {
+    container.classList.add("list");
+    container.classList.remove("grid");
+  });
+}
 
 getMembers();
 
@@ -86,8 +87,6 @@ menuButton.textContent = "☰";
 
 });
 
-document.getElementById("year").textContent =
-new Date().getFullYear();
 
-document.getElementById("lastModified").textContent =
-"Last Modification: " + document.lastModified;
+const date = document.querySelector("#currentyear")
+document.getElementById("lastModified").textContent = document.lastModified;
