@@ -69,4 +69,9 @@ main {
     margin: auto;
 }
 
+.container {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+}
+
 }

@@ -1,0 +1,198 @@
+    <!DOCTYPE html>
+    <html lang="en-US">
+
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/styles_large.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 231 – Chamber of Commerce Directory – Erick Hurtado Cabrales</title>
+        <link rel="icon" href="images/favicon.ico">
+        <meta name="description" content="WDD 231 – Chamber of Commerce Directory – Erick Hurtado Cabrales">
+        <meta name="author" content="Erick Hurtado">
+        <meta property="og:title" content="WDD 231">
+        <meta property="og:description" content="Welcome to the Chamber of Commerce Directory, made by Erick Hurtado.">
+        <meta property="og:url" content="https://erickhurtad0.github.io/wdd231/chamber/directory.html">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image" content="https://erickhurtad0.github.io/wdd231/chamber/images/logo.png">
+        <meta property="og:image:width" content="1920">
+        <meta property="og:image:height" content="1280">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Chamber of Commerce Directory">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <script src="scripts/scripts_join.js" defer></script>
+    </head>
+
+        <body>
+            <header>
+
+                <div class="logo-area">
+                <img src="images/logo.png" alt="Chamber Logo">
+                <h1>Mexico City Chamber of Commerce</h1>
+                </div>
+
+                <div class="nav-controls">
+                <button id="menuButton">☰</button>
+                </div>
+
+                <nav id="primaryNav">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+                </ul>
+                </nav>
+
+            </header>
+
+            <main class="container">
+
+                <form method="get" action="thankyou.html">
+
+                <label>
+                    First Name
+                    <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
+                </label>
+
+                <label>
+                    Organization Title
+                    <input type="text" name="orgtitle"
+                    title="Enter your role"
+                    autocomplete="organization-title">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" required
+                    title="Enter your email"
+                    autocomplete="email"
+                    placeholder="example@email.com">
+                </label>
+
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="phone" required
+                    title="Enter phone"
+                    autocomplete="tel">
+                </label>
+
+                <label>
+                    Business Name
+                    <input type="text" name="business" required
+                    title="Business name"
+                    autocomplete="organization">
+                </label>
+
+                <label>
+                    Membership Level
+                    <select name="membership" required>
+                        <option value="">Select</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Join Now">
+
+                </form>
+
+                <!-- CARDS -->
+                <div class="cards">
+
+                    <div class="card">
+                        <h2>NP Membership</h2>
+                        <button id="npmember" data-modal="npModal">More Info</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Bronze</h2>
+                        <button id="bronze" data-modal="bronzeModal">More Info</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Silver</h2>
+                        <button id="silver" data-modal="silverModal">More Info</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Gold</h2>
+                        <button id="gold" data-modal="goldModal">More Info</button>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <dialog id="npModal">
+                <h2>NP Membership</h2>
+                <p>No fee. Access to basic events.</p>
+                <button class="close">Close</button>
+            </dialog>
+
+            <dialog id="bronzeModal">
+                <h2>Bronze</h2>
+                <p>Basic advertising + events.</p>
+                <button class="close">Close</button>
+            </dialog>
+
+            <dialog id="silverModal">
+                <h2>Silver</h2>
+                <p>Training + discounts + ads.</p>
+                <button class="close">Close</button>
+            </dialog>
+
+            <dialog id="goldModal">
+                <h2>Gold</h2>
+                <p>Premium spotlight + all benefits.</p>
+                <button class="close">Close</button>
+            </dialog>
+
+            <footer>
+
+                <div class="footer-left">
+                    <p><strong>Mexico City Chamber of Commerce</strong></p>
+                    <p>26 Sesame St</p>
+                    <p>Mexico City, Mexico 55720</p>
+                    <p>erickhurtado@mexique.com</p>
+                    <p>(000) 000-0000</p>
+                </div>
+
+                <div class="footer-social">
+
+                    <div class="social-icons">
+                        <img src="images/youtube.png" alt="YouTube">
+                        <img src="images/xtwitter.png" alt="X">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </div>
+
+                    <p>Icon Credits to Flaticon https://www.flaticon.es/</p>
+                </div>
+
+                <div class="footer-right">
+                    <p>WDD231 Class Project</p>
+                    <p>Erick Hurtado Cabrales</p>
+                    <p>© 2026 Mexico City Chamber of Commerce</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+                </div>
+
+            </footer>
+        </body>
+
+    </html>
