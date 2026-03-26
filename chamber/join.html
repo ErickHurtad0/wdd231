@@ -63,10 +63,14 @@
                 </label>
 
                 <label>
-                    Organization Title
-                    <input type="text" name="orgtitle"
-                    title="Enter your role"
-                    autocomplete="organization-title">
+                Organization Title
+                <input 
+                    type="text"
+                    name="orgtitle"
+                    required
+                    title="Only letters, spaces, and hyphens. Minimum 7 characters."
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\s\-]{7,}">
                 </label>
 
                 <label>
