@@ -74,4 +74,16 @@ main {
     align-items: start;
 }
 
+.discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card3 card5"
+      "card6 card7 card8";
+  }
+
+  .hero-discover h1 {
+    font-size: 3rem;
+  }
+
 }

@@ -4,25 +4,26 @@
     <head>
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/styles_large.css">
+        <link rel="stylesheet" href="styles/styles_medium.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 231 – Chamber of Commerce Directory – Erick Hurtado Cabrales</title>
+        <title>WDD 231 – Chamber of Commerce Discover – Erick Hurtado Cabrales</title>
         <link rel="icon" href="images/favicon.ico">
-        <meta name="description" content="WDD 231 – Chamber of Commerce Directory – Erick Hurtado Cabrales">
+        <meta name="description" content="WDD 231 – Chamber of Commerce Discover – Erick Hurtado Cabrales">
         <meta name="author" content="Erick Hurtado">
         <meta property="og:title" content="WDD 231">
-        <meta property="og:description" content="Welcome to the Chamber of Commerce Directory, made by Erick Hurtado.">
-        <meta property="og:url" content="https://erickhurtad0.github.io/wdd231/chamber/directory.html">
+        <meta property="og:description" content="Welcome to the Chamber of Commerce Discover, made by Erick Hurtado.">
+        <meta property="og:url" content="https://erickhurtad0.github.io/wdd231/chamber/discover.html">
         <meta property="og:locale" content="en_US">
         <meta property="og:image" content="https://erickhurtad0.github.io/wdd231/chamber/images/logo.png">
         <meta property="og:image:width" content="1920">
         <meta property="og:image:height" content="1280">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Chamber of Commerce Directory">
+        <meta property="og:site_name" content="Chamber of Commerce Discover">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        <script src="scripts/scripts.js" defer></script>
+        <script type="module" src="scripts/scripts_discover.js"></script>
     </head>
 
         <body>
@@ -48,18 +49,19 @@
 
             </header>
 
-            <main>
+            <main class="discover-page">
+                <section class="hero-discover">
+                    <h2>Discover</h2>
+                    <p>Explore the places, history, recreation, and culture that make our area an excellent place to live, visit, and do business.</p>
+                </section>
 
-                <h2>Business Directory</h2>
+                <section id="visit-message" class="visit-message">
+                    <h2 class="visually-hidden">Visit Message</h2>
+                </section>
 
-                <div class="directory-buttons">
-                <button id="grid">⬛</button>
-                <button id="list">☰</button>
-                </div>
-
-                <div id="members" class="grid">
-                </div>
-
+                <section class="discover-grid" id="discover-grid">
+                    <h2 class="visually-hidden">Discover Places</h2>
+                </section>
             </main>
 
             <footer>
