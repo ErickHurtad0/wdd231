@@ -77,11 +77,12 @@
   }
 
   .movies-grid {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .movie-card img {
     height: auto;
+    width: auto;
   }
 
   .movie-info {
