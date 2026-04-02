@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--dark-blue);
+    padding: 1rem;
+    border-top: 2px solid var(--gold);
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  #ranimg {
+    height: 550px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+    .movie-modal-content {
+    grid-template-columns: 1fr;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .movie-modal-content img {
+    height: 300px;
+  }
+
+  .favorites-section {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .movies-grid {
+    gap: 1.5rem;
+  }
+
+  .movie-card img {
+    height: 300px;
+  }
+
+  .movie-info {
+    padding: 1.1rem;
+  }
+
+  .favorites-section h1 {
+    font-size: 2.4rem;
+  }
+}
+
