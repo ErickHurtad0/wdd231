@@ -90,6 +90,10 @@
     padding: 1.1rem;
   }
 
+  .movie-info h3 {
+    font-size: 1.1rem;
+  }
+
   .favorites-section h1 {
     font-size: 2.4rem;
   }
@@ -127,7 +131,7 @@
   }
 
   #random-movie .movie-info {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   #random-movie .movie-info h3 {
