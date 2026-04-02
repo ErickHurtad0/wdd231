@@ -78,6 +78,8 @@
 
   .movies-grid {
     gap: 1rem;
+    width: auto;
+    height: auto;
   }
 
   .movie-card img {
