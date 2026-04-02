@@ -81,7 +81,7 @@
   }
 
   .movie-card img {
-    height: 300px;
+    height: auto;
   }
 
   .movie-info {
