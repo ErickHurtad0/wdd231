@@ -134,8 +134,8 @@
     padding: 0.5rem;
   }
 
-  .movie-action {
-    font-size: 1rem;
+  .movie-btn {
+    font-size: 0.5rem;
   }
 
   #random-movie .movie-info h3 {
