@@ -1,4 +1,3 @@
-
 :root {
   --dark-blue: #0f172a;
   --cinematic-red: #e11d48;
@@ -73,7 +72,6 @@ h3,
   font-family: 'Poppins', sans-serif;
 }
 
-/* NAVIGATION */
 .navbar {
   background: var(--dark-blue);
   color: white;
@@ -145,6 +143,11 @@ h3,
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
+  color: var(--card);
+}
+
+.sr-only {
+  display: none;
 }
 
 .hero-btn,
@@ -202,6 +205,8 @@ h3,
   box-shadow: var(--shadow);
   border: 2px solid transparent;
   transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .movie-card:hover {
@@ -210,12 +215,15 @@ h3,
 }
 
 .movie-card img {
-  height: 350px;
+  height: 425px;
   object-fit: cover;
 }
 
 .movie-info {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .movie-info h3 {
@@ -228,10 +236,10 @@ h3,
   color: var(--muted);
 }
 
-.bottom-section {
-  display: grid;
-  grid-template-columns: 1fr 3.5fr;
-  gap: 2rem;
+.movie-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.75rem;
 }
 
 .movie-week,
@@ -247,6 +255,22 @@ h3,
   margin-top: 1rem;
 }
 
+.random-section {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  gap: 2rem;
+  align-items: start;
+  margin: 4rem 1.5rem;
+}
+
+.section-header {
+  padding-left: 1rem;
+}
+
+.random-section .section-header {
+  grid-column: 1 / -1;
+}
+
 .signup-box {
   background: linear-gradient(145deg, #162033, #0f172a);
   border-top: 4px solid var(--gold);
@@ -254,6 +278,7 @@ h3,
   padding: 3rem 2.5rem;
   color: white;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.28);
+  height: 40rem;
 }
 
 .signup-box h2 {
@@ -457,8 +482,8 @@ footer {
 
 .close-modal {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 2rem;
   width: 42px;
   height: 42px;
   border: none;
@@ -468,6 +493,8 @@ footer {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+
 
 .close-modal:hover {
   background: var(--cinematic-red);
@@ -534,12 +561,15 @@ footer {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  max-width: 680px;
   margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
 }
 
 .search-bar input {
   flex: 1;
+  min-width: 0;
+  width: 100%;
   padding: 1rem 1.4rem;
   border-radius: 999px;
   border: 2px solid rgba(255,255,255,0.08);
@@ -551,12 +581,9 @@ footer {
   transition: all 0.3s ease;
 }
 
-.search-bar input:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.2);
-}
-
 .search-bar button {
+  width: 200px;
+  flex-shrink: 0;
   border: none;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--cinematic-red), #fb7185);
@@ -567,12 +594,6 @@ footer {
   cursor: pointer;
   box-shadow: 0 12px 24px rgba(225, 29, 72, 0.28);
   transition: all 0.3s ease;
-}
-
-.search-bar button:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(135deg, var(--gold), #fde047);
-  color: var(--dark-blue);
 }
 
 .filters {
@@ -594,19 +615,10 @@ footer {
   box-shadow: 0 10px 18px rgba(15, 23, 42, 0.08);
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-  background: linear-gradient(135deg, var(--cinematic-red), #fb7185);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 14px 24px rgba(225, 29, 72, 0.25);
-}
-
-.sr-only {
-  position: absolute;
-  left: -9999px;
+  min-width: 10rem;
+  width: auto;
+  min-width: 140px;
+  padding: 0.85rem 1.35rem;
 }
 
 .favorite-btn,
@@ -669,5 +681,104 @@ footer {
 .favorite-btn.active {
   background: var(--cinematic-red);
   color: white;
+}
+
+.signup-container,
+.thankyou-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: var(--card);
+  color: var(--dark-blue);
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+.signup-container h2,
+.thankyou-card h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--cinematic-red);
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 14px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--cinematic-red);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.15);
+}
+
+.signup-container button,
+.home-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 14px;
+}
+
+.thankyou-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.thankyou-card {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(255,255,255,0.96);
+  color: var(--dark-blue);
+  border-radius: 30px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.8s ease;
+}
+
+.thankyou-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, var(--gold), var(--cinematic-red));
+}
+
+.thankyou-card h1 {
+  font-size: 2.3rem;
+  color: var(--cinematic-red);
+  margin-bottom: 1rem;
+}
+
+.thankyou-card > p {
+  color: #475569;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
 }
 

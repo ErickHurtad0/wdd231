@@ -18,14 +18,14 @@ if (menuButton && nav) {
   });
 }
 
+
 const trendingContainer = document.querySelector('#trending-container');
 const randomMovieContainer = document.querySelector('#random-movie');
 
-const apiKey = 'YOUR_TMDB_API_KEY';
+const apiKey = '3a52cca85c987e2f8f5298f6f230d976';
 
 async function loadMovies() {
   try {
-    // Trending movies
     const trendingResponse = await fetch(
       `https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`
     );
@@ -38,7 +38,6 @@ async function loadMovies() {
 
     trendingContainer.innerHTML = '';
 
-    // Only show the first 5 trending movies
     trendingData.results.slice(0, 5).forEach(movie => {
       const card = document.createElement('article');
       card.classList.add('movie-card');
@@ -59,7 +58,6 @@ async function loadMovies() {
       trendingContainer.appendChild(card);
     });
 
-    // Random "Movie of the Week"
     const randomMovie =
       trendingData.results[
         Math.floor(Math.random() * trendingData.results.length)

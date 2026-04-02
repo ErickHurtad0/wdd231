@@ -48,8 +48,8 @@
             </ul>
         </nav>
     </header>
-
-  <main>
+    
+<main>
     <section class="hero">
       <div class="hero-content">
         <h1>Discover Your Next Favorite Movie</h1>
@@ -63,17 +63,21 @@
     <section class="movies-section">
       <div class="section-header">
         <h2>Trending Movies</h2>
+        <a href="movies.html" class="view-all-btn">View All</a>
       </div>
 
-      <div class="movie-grid" id="trending-container"></div>
-
-      <a href="movies.html">View All</a>
+      <div class="movie-grid" id="trending-container">
+        <p class="loading-text">Loading trending movies...</p>
+      </div>
     </section>
 
-    <section class="bottom-section">
-      <div class="movie-week">
-        <h2>Random Movie of the Day</h2>
-        <div id="random-movie"></div>
+    <section class="random-section">
+      <div class="section-header">
+        <h2>Movie of the Week</h2>
+      </div>
+      
+      <div id="random-movie">
+        <p class="loading-text">Loading movie of the week...</p>
       </div>
 
       <div class="signup-box">
@@ -103,7 +107,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Focus, Shoot | Movie Explorer</p>
+    <p>&copy; 2026 Focus, Shoot | Movie Explorer | Erick Hurtado</p>
   </footer>
 
 

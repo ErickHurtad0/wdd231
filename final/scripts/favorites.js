@@ -1,3 +1,23 @@
+const menuButton = document.getElementById("menuToggle");
+const nav = document.getElementById("primaryNav");
+
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    nav.classList.toggle("open");
+
+    menuButton.textContent = nav.classList.contains("open")
+      ? "✖"
+      : "☰";
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      nav.classList.remove("open");
+      menuButton.textContent = "☰";
+    }
+  });
+}
+
 const favoritesContainer = document.getElementById('favoritesContainer');
 
 const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
